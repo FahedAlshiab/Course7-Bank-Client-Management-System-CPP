@@ -4,11 +4,13 @@
 ![IDE](https://img.shields.io/badge/IDE-Visual_Studio_2026-5C2D91?style=for-the-badge&logo=visualstudio&logoColor=white)
 [![Course](https://img.shields.io/badge/Course_07-Capstone_Project-orange?style=for-the-badge)](https://github.com/FahedAlshiab/07-Algorithms-Problem-Solving-Level-3)
 
-A console-based **Bank Client Management System** built in C++ as the capstone project for **[Course 07: Algorithms & Problem Solving Level 3](https://github.com/FahedAlshiab/07-Algorithms-Problem-Solving-Level-3)**. It implements a menu-driven client administration suite backed by flat-file persistence (`Clients.txt`), consolidating custom string tokenization, record serialization, and full CRUD operations into a unified application.
+A console-based **Bank Client Management System** built in C++ as the capstone project (including the Bank Extension) for **[Course 07: Algorithms & Problem Solving Level 3](https://github.com/FahedAlshiab/07-Algorithms-Problem-Solving-Level-3)**. It implements a menu-driven client administration and financial transactions suite backed by flat-file persistence (`Clients.txt`), consolidating custom string tokenization, record serialization, full CRUD operations, and balance management into a unified application.
 
 ---
 
 ## Core Features
+
+### Main Menu
 
 | Option | Feature | Description |
 | :---: | :--- | :--- |
@@ -17,7 +19,17 @@ A console-based **Bank Client Management System** built in C++ as the capstone p
 | **[3]** | **Delete Client** | Confirms `[Y/N]`, flags the record (`MarkForDelete`), and rewrites the file. |
 | **[4]** | **Update Client Info** | Previews current details, confirms `[Y/N]`, and persists updated fields. |
 | **[5]** | **Find Client** | Searches by `AccountNumber` and displays the client details card. |
-| **[6]** | **Exit** | Cleanly terminates the session. |
+| **[6]** | **Transactions** | Opens the financial transactions sub-menu (`Deposit`, `Withdraw`, `Total Balances`). |
+| **[7]** | **Exit** | Cleanly terminates the session. |
+
+### Transactions Menu (`[6]`)
+
+| Option | Feature | Description |
+| :---: | :--- | :--- |
+| **[1]** | **Deposit** | Validates positive deposit amounts, confirms `[Y/N]`, and increments `AccountBalance` in `Clients.txt`. |
+| **[2]** | **Withdraw** | Enforces overdraft limits (`Amount <= AccountBalance`), confirms `[Y/N]`, and deducts from balance. |
+| **[3]** | **Total Balances** | Renders a condensed account balance table and computes aggregate funds across all clients. |
+| **[4]** | **Main Menu** | Returns control cleanly to the primary navigation loop. |
 
 ---
 
