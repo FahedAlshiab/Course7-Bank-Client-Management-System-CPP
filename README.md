@@ -33,9 +33,45 @@ A console-based **Bank Client Management System** built in C++ as the capstone p
 
 ---
 
+## Live Demo
+
+<details>
+<summary><strong>[1] & [5] Show Client List & Search</strong></summary>
+<br>
+
+
+https://github.com/user-attachments/assets/272b8ba1-f113-45a7-9476-2d61970104c0
+
+
+</details>
+
+<details>
+<summary><strong>[2], [3] & [4] Client CRUD Operations (Add, Update & Delete)</strong></summary>
+<br>
+
+
+
+https://github.com/user-attachments/assets/4e823d9f-f6f2-4db8-8e31-6e83b019dcc5
+
+
+</details>
+
+<details>
+<summary><strong>[6] & [7] Transactions Module & Clean Exit</strong></summary>
+<br>
+
+
+https://github.com/user-attachments/assets/822618ea-318d-4598-afa1-1f46282555d9
+
+
+</details>
+
+---
+
 ## System Architecture & Data Flow
 
 Client entities are modeled via `struct sClient` and persisted in `Clients.txt` using a custom `#//#` field delimiter:
 
 ```text
 AccountNumber#//#PinCode#//#Name#//#Phone#//#AccountBalance
+A101#//#1234#//#Fahed Alshiab#//#0791234567#//#12500.500000
